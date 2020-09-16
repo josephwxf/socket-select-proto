@@ -1,0 +1,17 @@
+package Fberhome;
+
+import "comm.proto";
+
+message testReq
+{
+	required ImPbmp fe = 1;
+}
+
+message ImVerReq
+{
+	required string build_release = 1;
+	required string build_user = 2;
+	required string build_host = 3;
+	required string build_date = 4;
+	required string build_arch = 5;
+}

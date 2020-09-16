@@ -1,0 +1,16 @@
+package Fberhome;
+
+message ImPbmp
+{
+	repeated uint32 pbmp = 1;
+}
+
+message FbInitReq
+{
+	required int32 unit = 1;
+}
+
+message ImDbgReq
+{
+	required int32 enable = 1;
+}

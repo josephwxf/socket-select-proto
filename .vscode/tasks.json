@@ -1,0 +1,39 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: gcc build active file",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        //add
+        {
+            "label": "clean and make", //认为名称
+            "type": "shell", //类型执行shell类型的任意命令
+            "command": "make clean && make", //命令
+            "problemMatcher": []
+        },
+        {
+            "label": "make",
+            "type": "shell",
+            "command": "make",
+            "problemMatcher": []
+        }
+    ],
+    "version": "2.0.0"
+}
